@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content{
+    display: grid;
+    border: 1px solid black ;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+}
+.left-section{
+    grid-column: span 1;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    
+}
+.left-content{
+    padding: 1rem 1rem;
+}
+.profile-image{
+    padding: 1rem 1rem;
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align:left;
+    padding-bottom: 0.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    vertical-align: text-top;
+}
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-main-content{
+    padding : 2rem 4rem;
+    padding : 2rem 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width : 673px){
+    *{
+        background-color: rgb(145, 137, 145);
+    }
+    .main-content{
+        grid-template-columns: repeat(1,1fr) ;
+    }
+   
+}
